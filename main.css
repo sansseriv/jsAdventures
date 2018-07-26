@@ -1,0 +1,102 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s ease-in-out; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;   
+}
+
+.griddit {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    height: 100vh;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.griddit div {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #1f1f1f;
+}
+
+.bah {
+    height: 4px;
+    width: 30px;
+    background-color: grey;
+    margin: 4px 4px 4px 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 48px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover{
+    color: gold;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#loremPage .killIt {
+    height: 25vh;
+    width: 0vw;
+    background-color: grey; 
+    margin-left: 1em;
+    margin-top: 1em;
+    transition: 200ms ease-in-out;
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-style: bold;
+    font-size: 32px;
+    background-color: gold;
+    padding: .5em .5em;
+    margin-top: 0;    
+}
+
+h2 {
+font-family: 'Zilla Slab', serif;
+font-style: italic;
+font-size: 20px;
+color: white;
+
+}
+
+h3 {
+    font: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+}
